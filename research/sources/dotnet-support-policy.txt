@@ -1,0 +1,207 @@
+Source: https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core
+
+.NET and .NET Core Support Policy
+
+Last updated: September 8, 2026
+
+What's covered
+
+.NET and .NET Core refer to several technologies including the runtime, the SDK, ASP.NET Core, and Entity Framework Core.
+
+Looking for the support policy for another part of the .NET platform? See the .NET Support Policy page.
+
+Every Microsoft product has a lifecycle. The lifecycle begins when a product is released and ends when it's no longer supported. Knowing key dates in this lifecycle helps you make informed decisions about when to upgrade or make other changes to your software. This product is governed by Microsoft's Modern Lifecycle Policy.
+
+The .NET and .NET Core support lifecycle offers support for each release. The length of time and degree of support vary based on a few qualifications.
+
+.NET and .NET Core are supported across several operating systems and versions. The .NET Supported OS Policy provides current details on operating systems support policies and versions.
+
+What releases qualify for servicing and how do updates affect servicing qualifications?
+
+Customers can choose Long Term Support (LTS) releases or Standard Term Support (STS) releases. The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for three years. STS releases get free support and patches for two years.
+
+Within a release's support lifecycle, systems must remain current on released patch updates.
+
+.NET and .NET Core release lifecycle
+
+Supported versions
+
+The following table tracks release and end of support dates for .NET and .NET Core versions.
+
+Supported versions
+
+Version | Original release date | Latest patch version | Patch release date | Release type | Support phase | End of support
+
+.NET 10 | November 11, 2025 | 10.0.12 | September 8, 2026 | LTS | Active | November 14, 2028
+
+.NET 9 | November 12, 2024 | 9.0.20 | September 8, 2026 | STS | Maintenance | November 10, 2026
+
+.NET 8 | November 14, 2023 | 8.0.31 | September 8, 2026 | LTS | Maintenance | November 10, 2026
+
+Go-live releases
+
+The support lifecycle for applicable pre-releases is as follows.
+
+Version | Release Date | End of Support
+
+.NET 11 RC1 | September 8, 2026 | October 13, 2026
+
+Out of support versions
+
+The following table lists .NET Core versions no longer supported.
+
+Out of support versions
+
+Version | Original release date | Latest patch version | Patch release date | End of support
+.NET 7 | November 8, 2022 | 7.0.20 | May 28, 2024 | May 14, 2024
+
+.NET 6 | November 8, 2021 | 6.0.36 | November 12, 2024 | November 12, 2024
+
+.NET 5 | November 10, 2020 | 5.0.17 | May 10, 2022 | May 10, 2022
+
+.NET Core 3.1 | December 3, 2019 | 3.1.32 | December 13, 2022 | December 13, 2022
+
+.NET Core 3.0 | September 23, 2019 | 3.0.3 | February 18, 2020 | March 3, 2020
+
+.NET Core 2.2 | December 4, 2018 | 2.2.8 | November 19, 2019 | December 23, 2019
+
+.NET Core 2.1 | May 30, 2018 | 2.1.30 | August 19, 2021 | August 21, 2021
+
+.NET Core 2.0 | August 14, 2017 | 2.0.9 | July 10, 2018 | October 1, 2018
+
+.NET Core 1.1 | November 16, 2016 | 1.1.13 | May 14, 2019 | June 27, 2019
+
+.NET Core 1.0 | June 27, 2016 | 1.0.16 | May 14, 2019 | June 27, 2019
+
+.NET release cadence
+
+A new major release of .NET is published every year in November, enabling developers, the community, and businesses to plan their roadmaps. Even numbered releases are LTS releases that get free support and patches for three years.
+
+Odd numbered releases are STS releases that get free support and patches for two years.
+
+Release types
+
+Long Term Support (LTS)
+
+LTS releases are supported for three years after the initial release.
+
+Standard Term Support (STS)
+
+STS releases are supported for one year after a subsequent release. Releases happen every 12 months so the support period for STS is two years.
+
+STS releases were previously known as Current releases.
+
+How do the different support tracks work?
+
+Customers choosing LTS need the latest patch update installed to qualify for support. If a system is running 8.0 and 8.0.x has been released, 8.0.x needs to be installed as a first step. Once a patch update has been installed, applications begin using the update by default. LTS releases are supported for three years after general availability.
+
+Customers choosing STS need the latest patch update installed to qualify for support. If a system is running 9.0 and 9.0.x has been released, 9.0.x needs to be installed as a first step. Once a patch update has been installed, applications begin using the update by default. STS releases are supported for two years after general availability.
+
+Servicing
+
+.NET releases are supported - during the servicing period - according to the following policies. Servicing policies are the same for LTS and STS releases.
+
+Updates are cumulative and released as patches, with each update built upon all of the updates that preceded it. A device needs to install the latest update to remain supported. Updates may include new features, fixes (security and/or non-security), or a combination of both.
+
+Updates are released on the Microsoft "Patch Tuesday" (second Tuesday of each month), however there is no guarantee that there will be a .NET release on any given Patch Tuesday. Patches are announced on the .NET blog. A digest of monthly releases is published to dotnet/announcements. For more details about .NET servicing and patching, see the .NET releases, patches, and support article.
+
+Preview
+
+Preview releases aren't supported by Microsoft but they are offered for public testing ahead of the final release.
+
+Go-live
+
+Go-live releases are supported by Microsoft in production. These are typically our release candidate builds, just before the generally available (GA) release.
+
+Active support
+
+During the active support period, .NET releases are updated to improve functional capabilities and mitigate security vulnerabilities.
+
+Functional improvements are typically very targeted, and may address the following:
+
+Resolve reported crashes.
+
+Resolve severe performance issues.
+
+Resolve functional bugs in mainline scenarios.
+
+Add support for a new operating system version or new hardware platform.
+
+Maintenance support
+
+During the maintenance support period, .NET releases are updated to mitigate security vulnerabilities, only.
+
+The maintenance support period is the final 6 months of support for any release (STS or LTS). After the maintenance period ends, the release is out of support.
+
+End of life (EOL)
+
+End of life refers to the date when Microsoft no longer provides fixes, updates, or online technical assistance. End of life may also be referred to as 'end of support' (EOS).
+
+As the end of life nears for a given .NET version, we recommend that you move to a newer .NET version, and reduce/remove your use of the given .NET version. After support ends, we recommend that you uninstall a given .NET version if you are no longer using it, or install the latest patch, and accelerate your plans to remove your use of that .NET version.
+Your use of out-of-support .NET versions may put your applications, application data, and computing environment at risk. You are strongly recommended to not use out-of-support software.
+
+Starting with .NET Core 3.1, end of life dates align with Microsoft Patch Tuesday (second Tuesday of each month). For example, .NET 6 was originally released on November 8, 2021 and is supported for three years. But the actual end of support day is the closest Patch Tuesday starting that date, which is November 12, 2024.
+
+ASP.NET Core 2.3 on .NET Framework
+
+Support for ASP.NET Core 2.3 on .NET Framework matches the ASP.NET Support policy for other package-based ASP.NET frameworks. The complete list of packages covered by this policy can be seen in ASP.NET Core 2.3 Supported Packages.
+
+What operating system versions are supported to run .NET and .NET Core applications?
+
+.NET and .NET Core are supported across several operating systems and versions. The .NET Supported OS Policy provides current details on operating systems support policies and versions.
+
+Automatic patching on Windows operating system
+
+All versions of .NET that are supported can be automatically patched via Microsoft Update. This enables organizations to manage all .NET updates in the same way.
+
+Applications using the Framework Dependent Deployment model benefit from .NET updates delivered by Microsoft update. There is no change to apps that use the Self-Contained Deployment model, so these apps are still responsible for keeping the runtime updated.
+
+Accessing support
+
+For assisted support with .NET technologies, contact a Microsoft Support Professional.
+
+Community support is a great way to get help and even contribute to the projects. For more information, see the Community page.
+
+Ready to get started?
+
+Learn .NET easily with our step-by-step tutorials.
+
+Get started
+
+Follow us
+
+Feedback
+
+English (United States)
+
+Español
+
+Français (France)
+
+Indonesia (Indonesia)
+
+Italiano (Italia)
+
+日本語
+
+한국어
+
+Português (Brasil)
+
+Русский (Россия)
+
+中文（简体）
+
+中文（台灣）
+
+Your Privacy Choices
+
+Consumer Health Privacy
+
+Powered by .NET 10.0.12
+Contact Microsoft
+Support
+Privacy & Cookies
+Manage cookies
+Terms of Use
+Trademarks

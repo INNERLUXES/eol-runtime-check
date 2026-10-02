@@ -1,0 +1,41 @@
+Source: https://go.dev/doc/devel/release
+
+Go release history, the release policy and the first release of each major version
+
+Release Policy
+
+Each major Go release is supported until there are two newer major releases.
+For example, Go 1.5 was supported until the Go 1.7 release, and Go 1.6 was
+supported until the Go 1.8 release.
+We fix critical problems, including critical security problems,
+in supported releases as needed by issuing minor revisions
+(for example, Go 1.6.1, Go 1.6.2, and so on).
+
+go1.27.0 (released 2026-08-19)
+go1.26.0 (released 2026-02-10)
+go1.25.0 (released 2025-08-12)
+go1.24.0 (released 2025-02-11)
+go1.23.0 (released 2024-08-13)
+go1.22.0 (released 2024-02-06)
+go1.21.0 (released 2023-08-08)
+go1.20 (released 2023-02-01)
+go1.19 (released 2022-08-02)
+go1.18 (released 2022-03-15)
+go1.17 (released 2021-08-16)
+go1.16 (released 2021-02-16)
+go1.15 (released 2020-08-11)
+go1.14 (released 2020-02-25)
+go1.13 (released 2019-09-03)
+go1.12 (released 2019-02-25)
+go1.11 (released 2018-08-24)
+go1.10 (released 2018-02-16)
+go1.9 (released 2017-08-24)
+go1.8 (released 2017-02-16)
+go1.7 (released 2016-08-15)
+go1.6 (released 2016-02-17)
+go1.5 (released 2015-08-19)
+go1.4 (released 2014-12-10)
+go1.3 (released 2014-06-18)
+go1.2 (released 2013-12-01)
+go1.1 (released 2013-05-13)
+go1 (released 2012-03-28)

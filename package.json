@@ -1,0 +1,52 @@
+{
+  "name": "eol-runtime-check",
+  "version": "1.0.0",
+  "description": "Read a code folder and find the runtime and framework versions it declares (Node.js, Python, .NET, Java, PHP, Ruby, Go), then report which are past the end of support or close to it, so that a modernization can be planned. Each finding names the file, the declared value, the lowest version it allows, the days left or gone, and quotes the official lifecycle page. Reads text files only, never runs code, never touches the network, no dependencies.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "eol-runtime-check": "bin/eol-runtime-check.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "docs",
+    "examples",
+    "research",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "test:coverage": "node --test --experimental-test-coverage \"test/*.test.js\"",
+    "check": "node tools/check.mjs",
+    "example": "node tools/example.mjs"
+  },
+  "keywords": [
+    "end-of-life",
+    "end-of-support",
+    "lifecycle",
+    "runtime",
+    "modernization",
+    "legacy",
+    "nodejs",
+    "python",
+    "dotnet",
+    "java",
+    "php",
+    "cli"
+  ],
+  "author": "INNERLUXES <info@innerluxes.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/INNERLUXES/eol-runtime-check.git"
+  },
+  "homepage": "https://innerluxes.dev/application/modernization"
+}

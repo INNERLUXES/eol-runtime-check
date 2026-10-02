@@ -1,0 +1,24 @@
+Source: https://www.php.net/supported-versions.php
+
+Supported Versions
+
+Each release branch of PHP is fully supported for two years from its initial
+stable release. During this period, bugs and security issues that have been
+reported are fixed and are released in regular point releases.
+
+After this two year period of active support, each branch is then supported
+for two additional years for critical security issues only. Releases during
+this period are made on an as-needed basis: there may be multiple point
+releases, or none, depending on the number of reports.
+
+Once the four years of support are completed, the branch reaches its end of
+life and is no longer supported. A table of end of life
+branches is available.
+
+Currently Supported Versions
+
+Branch | Initial Release | Active Support Until | Security Support Until
+8.2 | 8 Dec 2022 | 31 Dec 2024 | 31 Dec 2026
+8.3 | 23 Nov 2023 | 31 Dec 2025 | 31 Dec 2027
+8.4 | 21 Nov 2024 | 31 Dec 2026 | 31 Dec 2028
+8.5 | 20 Nov 2025 | 31 Dec 2027 | 31 Dec 2029

@@ -1,0 +1,44 @@
+Source: https://learn.microsoft.com/en-us/lifecycle/products/microsoft-net-and-net-core
+
+Microsoft .NET and .NET Core follows the Modern Lifecycle Policy.
+
+Support dates are shown in the Pacific Time Zone (PT) - Redmond, WA, USA.
+
+Support Dates
+
+Listing | Start Date | Retirement Date
+
+Microsoft .NET and .NET Core | 6/27/2016 8:00:00 AM | In Support
+
+Releases
+
+Version | Start Date | End Date
+
+.NET 10 | 11/11/2025 8:00:00 AM | 11/15/2028 6:59:59 AM
+
+.NET 9 | 11/12/2024 8:00:00 AM | 11/11/2026 6:59:59 AM
+
+.NET 8 (LTS) | 11/14/2023 8:00:00 AM | 11/11/2026 6:59:59 AM
+
+.NET 7 | 11/8/2022 8:00:00 AM | 5/15/2024 6:59:59 AM
+
+.NET 6.0 (LTS) | 11/8/2021 8:00:00 AM | 11/13/2024 6:59:59 AM
+
+.NET 5.0 | 11/10/2020 8:00:00 AM | 5/11/2022 6:59:59 AM
+
+.NET Core 3.1 (LTS) | 12/3/2019 8:00:00 AM | 12/14/2022 6:59:59 AM
+
+.NET Core 3.0 | 9/23/2019 8:00:00 AM | 3/4/2020 6:59:59 AM
+
+.NET Core 2.2 | 12/4/2018 8:00:00 AM | 12/24/2019 6:59:59 AM
+
+.NET Core 2.1 (LTS) | 5/30/2018 8:00:00 AM | 8/22/2021 6:59:59 AM
+
+.NET Core 2.0 | 8/14/2017 8:00:00 AM | 10/2/2018 6:59:59 AM
+
+.NET Core 1.1 | 11/16/2016 8:00:00 AM | 6/28/2019 6:59:59 AM
+
+.NET Core 1.0 | 6/27/2016 8:00:00 AM | 6/28/2019 6:59:59 AM
+
+Beginning with .NET 5.0, Microsoft .NET Core has been rebranded as .NET.
+ASP.NET Core and Entity Framework Core follow the same lifecycle as .NET Core.

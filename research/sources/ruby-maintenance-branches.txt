@@ -1,0 +1,175 @@
+Source: https://www.ruby-lang.org/en/downloads/branches/
+
+This page lists the current maintenance status of the various Ruby branches.
+
+For more information about specific releases see the
+Releases page.
+
+This is a preliminary list of Ruby branches and their maintenance status.
+The shown dates are inferred from the English versions of release posts
+or EOL announcements.
+
+The Ruby branches or release series are categorized below into
+the following phases:
+
+normal maintenance (bug fix):
+Branch receives general bug fixes and security fixes.
+
+security maintenance (security fix):
+Only security fixes are backported to this branch.
+
+eol (end-of-life):
+Branch is not supported by the ruby-core team any longer and does
+not receive any fixes. No further patch release will be released.
+
+Ruby Lifecycle Timelines
+
+Ruby 4.0
+
+status: normal maintenance
+
+release date: 2025-12-25
+
+normal maintenance until: TBD
+
+EOL: TBD
+
+Ruby 3.4
+
+status: normal maintenance
+
+release date: 2024-12-25
+
+normal maintenance until: TBD
+
+EOL: TBD
+
+Ruby 3.3
+
+status: security maintenance
+
+release date: 2023-12-25
+
+normal maintenance until: 2026-04-01
+
+EOL: 2027-03-31 (expected)
+
+Ruby 3.2
+
+status: eol
+
+release date: 2022-12-25
+
+normal maintenance until: 2025-04-01
+
+EOL: 2026-04-01
+
+Ruby 3.1
+
+status: eol
+
+release date: 2021-12-25
+
+normal maintenance until: 2024-04-01
+
+EOL: 2025-03-26
+
+Ruby 3.0
+
+status: eol
+
+release date: 2020-12-25
+
+normal maintenance until: 2023-04-01
+
+EOL: 2024-04-23
+
+Ruby 2.7
+
+status: eol
+
+release date: 2019-12-25
+
+normal maintenance until: 2022-04-01
+
+EOL: 2023-03-31
+
+Ruby 2.6
+
+status: eol
+
+release date: 2018-12-25
+
+normal maintenance until: 2021-04-01
+
+EOL: 2022-04-12
+
+Ruby 2.5
+
+status: eol
+
+release date: 2017-12-25
+
+normal maintenance until: 2020-04-01
+
+EOL: 2021-04-05
+
+Ruby 2.4
+
+status: eol
+
+release date: 2016-12-25
+
+normal maintenance until: 2019-04-01
+
+EOL: 2020-03-31
+
+Ruby 2.3
+
+status: eol
+
+release date: 2015-12-25
+
+normal maintenance until: 2018-03-28
+
+EOL: 2019-03-31
+
+Ruby 2.2
+
+status: eol
+
+release date: 2014-12-25
+
+normal maintenance until: 2017-03-28
+
+EOL: 2018-03-31
+
+Ruby 2.1
+
+status: eol
+
+release date: 2013-12-25
+
+normal maintenance until: 2016-03-31
+
+EOL: 2017-03-31
+
+Ruby 2.0.0
+
+status: eol
+
+release date: 2013-02-24
+
+normal maintenance until: 2016-02-24
+
+EOL: 2016-02-24
+
+Ruby 1.9.3
+
+status: eol
+
+release date: 2011-10-31
+
+normal maintenance until: 2014-02-24
+
+EOL: 2015-02-23

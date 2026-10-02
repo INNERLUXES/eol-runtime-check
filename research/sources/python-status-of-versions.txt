@@ -1,0 +1,95 @@
+Source: https://devguide.python.org/versions/
+
+Status of Python versions
+
+The main branch is currently the future Python 3.16, and is the only
+branch that accepts new features. The latest release for each Python
+version can be found on the download page.
+
+(See below for a chart with older versions.
+Another useful visualization is endoflife.date/python.)
+
+Supported versions
+
+Dates shown in italic are scheduled and can be adjusted.
+
+Branch | Schedule | Status | First release | End of life
+
+main | PEP 826 | feature | 2027-10-06 | 2032-10
+
+3.15 | PEP 790 | prerelease | 2026-10-01 | 2031-10
+
+3.14 | PEP 745 | bugfix | 2025-10-07 | 2030-10
+
+3.13 | PEP 719 | security | 2024-10-07 | 2029-10
+
+3.12 | PEP 693 | security | 2023-10-02 | 2028-10
+
+3.11 | PEP 664 | security | 2022-10-24 | 2027-10
+
+Unsupported versions
+
+Branch | Schedule | Status | First release | End of life
+
+3.10 | PEP 619 | end-of-life | 2021-10-04 | 2026-10-01
+
+3.9 | PEP 596 | end-of-life | 2020-10-05 | 2025-10-31
+
+3.8 | PEP 569 | end-of-life | 2019-10-14 | 2024-10-07
+
+3.7 | PEP 537 | end-of-life | 2018-06-27 | 2023-06-27
+
+3.6 | PEP 494 | end-of-life | 2016-12-23 | 2021-12-23
+
+3.5 | PEP 478 | end-of-life | 2015-09-13 | 2020-09-30
+
+3.4 | PEP 429 | end-of-life | 2014-03-16 | 2019-03-18
+
+3.3 | PEP 398 | end-of-life | 2012-09-29 | 2017-09-29
+
+3.2 | PEP 392 | end-of-life | 2011-02-20 | 2016-02-20
+
+3.1 | PEP 375 | end-of-life | 2009-06-27 | 2012-04-09
+
+3.0 | PEP 361 | end-of-life | 2008-12-03 | 2009-06-27
+
+2.7 | PEP 373 | end-of-life | 2010-07-03 | 2020-01-01
+
+2.6 | PEP 361 | end-of-life | 2008-10-01 | 2013-10-29
+
+Full chart
+
+Status key
+
+Python releases go through five phases, as described in PEP 602. Release
+managers can adjust specific dates as needed.
+
+feature:
+
+Before the first beta, the next full release can accept new features,
+bug fixes, and security fixes.
+
+prerelease:
+
+After the first beta, no new features can go in, but feature fixes
+(including significant changes to new features), bug fixes, and security fixes
+are accepted for the upcoming feature release.
+
+bugfix:
+
+Once a version has been fully released, bug fixes and security fixes are
+accepted. New binaries are built and released roughly every two months. This
+phase is also called maintenance mode or stable release.
+
+security:
+
+After two years (18 months for versions before 3.13), only security
+fixes are accepted and no more binaries are released. New source-only versions
+can be released as needed.
+
+end-of-life:
+
+Five years after a release, support ends. The release cycle is
+frozen; no further changes are allowed.
+
+See also the Development cycle page for more information about branches and backporting.

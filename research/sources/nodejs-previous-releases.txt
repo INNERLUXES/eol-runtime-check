@@ -1,0 +1,63 @@
+Source: https://nodejs.org/en/about/previous-releases
+
+Major Node.js versions enter Current release status for six months, which gives library authors time to add support for them.
+Historically (up to Node.js 26), odd-numbered releases (9, 11, etc.) become unsupported after six months, and even-numbered releases (10, 12, etc.) move to Active LTS status and are ready for general use.
+Starting with Node.js 27, the release cycle will be annual and every major version will move to LTS status after its six-month Current phase (and six additional months of Alpha phase).
+LTS release status is "long-term support", which typically guarantees that critical bugs will be fixed for a total of 30 months.
+Production applications should only use Active LTS or Maintenance LTS releases.
+
+Release Schedule
+
+Full details regarding the Node.js release schedule are available on GitHub.
+
+Looking for the latest release of a version branch?
+
+Node.js | Codename | First released | Last updated | Status |
+
+v 26 | - | May 05, 2026 | Sep 21, 2026 | Current | Details
+
+v 25 | - | Oct 15, 2025 | Mar 31, 2026 | EOL | Details
+
+v 24 | Krypton | May 06, 2025 | Sep 07, 2026 | LTS | Details
+
+v 23 | - | Oct 16, 2024 | May 14, 2025 | EOL | Details
+
+v 22 | Jod | Apr 24, 2024 | Sep 23, 2026 | LTS | Details
+
+v 21 | - | Oct 17, 2023 | Apr 10, 2024 | EOL | Details
+
+v 20 | Iron | Apr 17, 2023 | Mar 24, 2026 | EOL | Details
+
+v 19 | - | Oct 17, 2022 | Apr 10, 2023 | EOL | Details
+
+v 18 | Hydrogen | Apr 18, 2022 | Mar 27, 2025 | EOL | Details
+
+v 17 | - | Oct 19, 2021 | Jun 01, 2022 | EOL | Details
+
+v 16 | Gallium | Apr 20, 2021 | Aug 08, 2023 | EOL | Details
+
+v 15 | - | Oct 20, 2020 | Apr 06, 2021 | EOL | Details
+
+v 14 | Fermium | Apr 21, 2020 | Feb 16, 2023 | EOL | Details
+
+v 13 | - | Oct 22, 2019 | Apr 29, 2020 | EOL | Details
+
+v 12 | Erbium | Apr 23, 2019 | Apr 05, 2022 | EOL | Details
+
+v 11 | - | Oct 23, 2018 | Apr 30, 2019 | EOL | Details
+
+v 10 | Dubnium | Apr 24, 2018 | Apr 06, 2021 | EOL | Details
+
+v 9 | - | Oct 31, 2017 | Jun 12, 2018 | EOL | Details
+
+v 8 | Carbon | May 30, 2017 | Dec 17, 2019 | EOL | Details
+
+v 7 | - | Oct 25, 2016 | Jul 11, 2017 | EOL | Details
+
+v 6 | Boron | Apr 26, 2016 | Apr 03, 2019 | EOL | Details
+
+v 5 | - | Oct 29, 2015 | Jun 23, 2016 | EOL | Details
+
+v 4 | Argon | Sep 08, 2015 | Mar 29, 2018 | EOL | Details
+
+v 0 | - | Feb 06, 2015 | Feb 22, 2017 | EOL | Details
