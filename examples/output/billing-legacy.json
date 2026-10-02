@@ -1,0 +1,235 @@
+{
+  "tool": "eol-runtime-check",
+  "version": "1.0.0",
+  "target": "billing-legacy",
+  "today": null,
+  "options": {
+    "soonDays": 180,
+    "maxDepth": 8,
+    "skip": [],
+    "defaultSkip": true,
+    "dates": false,
+    "failOn": "warning"
+  },
+  "input": {
+    "folders": 5,
+    "entries": 10,
+    "files": 6,
+    "filesRead": 6,
+    "declarations": 7
+  },
+  "findings": [
+    {
+      "id": "runtime-past-support",
+      "severity": "error",
+      "subject": ".NET 6",
+      "file": "ledger/Ledger.csproj",
+      "where": "TargetFramework",
+      "declared": "net6.0",
+      "message": "ledger/Ledger.csproj TargetFramework \"net6.0\" names .NET 6, which is past its end of support: it ended 474 days ago.",
+      "fix": "Move to a release that is still supported and change this file to name it; then run the check again.",
+      "details": {
+        "runtime": "dotnet",
+        "key": "6",
+        "lowest": "6",
+        "range": false,
+        "kind": "end",
+        "precision": "day",
+        "end": null,
+        "daysLeft": null,
+        "daysPast": 474,
+        "source": "https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core"
+      },
+      "manual": [
+        {
+          "page": ".NET and .NET Core official support policy",
+          "section": "What releases qualify for servicing",
+          "url": "https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core",
+          "quote": "LTS releases get free support and patches for three years. STS releases get free support and patches for two years."
+        }
+      ]
+    },
+    {
+      "id": "runtime-past-support",
+      "severity": "error",
+      "subject": "Node.js 18",
+      "file": "package.json",
+      "where": "engines.node",
+      "declared": ">=18",
+      "message": "package.json engines.node \">=18\" allows Node.js 18 as its lowest version, which is past its end of support: it ended 305 days ago.",
+      "fix": "Raise the lower limit to a release that is still supported and move the code to it; then run the check again.",
+      "details": {
+        "runtime": "node",
+        "key": "18",
+        "lowest": "18",
+        "range": true,
+        "kind": "end",
+        "precision": "day",
+        "end": null,
+        "daysLeft": null,
+        "daysPast": 305,
+        "source": "https://github.com/nodejs/Release"
+      },
+      "manual": [
+        {
+          "page": "Node.js, previous releases",
+          "section": "Node.js Releases",
+          "url": "https://nodejs.org/en/about/previous-releases",
+          "quote": "Production applications should only use Active LTS or Maintenance LTS releases."
+        }
+      ]
+    },
+    {
+      "id": "runtime-past-support",
+      "severity": "error",
+      "subject": "Python 3.8",
+      "file": "reports/pyproject.toml",
+      "where": "requires-python",
+      "declared": ">=3.8",
+      "message": "reports/pyproject.toml requires-python \">=3.8\" allows Python 3.8 as its lowest version, which is past its end of support: it ended 510 days ago.",
+      "fix": "Raise the lower limit to a release that is still supported and move the code to it; then run the check again.",
+      "details": {
+        "runtime": "python",
+        "key": "3.8",
+        "lowest": "3.8",
+        "range": true,
+        "kind": "end",
+        "precision": "day",
+        "end": null,
+        "daysLeft": null,
+        "daysPast": 510,
+        "source": "https://devguide.python.org/versions/"
+      },
+      "manual": [
+        {
+          "page": "Python Developer's Guide, status of Python versions",
+          "section": "Status key, end-of-life",
+          "url": "https://devguide.python.org/versions/",
+          "quote": "Five years after a release, support ends."
+        }
+      ]
+    },
+    {
+      "id": "runtime-past-support",
+      "severity": "error",
+      "subject": "PHP 7.4",
+      "file": "web/Dockerfile",
+      "where": "FROM line 6",
+      "declared": "php:7.4-apache",
+      "message": "web/Dockerfile FROM line 6 \"php:7.4-apache\" names PHP 7.4, which is past its end of support: it ended 1,189 days ago.",
+      "fix": "Move to a release that is still supported and change this file to name it; then run the check again.",
+      "details": {
+        "runtime": "php",
+        "key": "7.4",
+        "lowest": "7.4",
+        "range": false,
+        "kind": "end",
+        "precision": "day",
+        "end": null,
+        "daysLeft": null,
+        "daysPast": 1189,
+        "source": "https://www.php.net/eol.php"
+      },
+      "manual": [
+        {
+          "page": "PHP, supported versions",
+          "section": "Supported Versions",
+          "url": "https://www.php.net/supported-versions.php",
+          "quote": "Once the four years of support are completed, the branch reaches its end of life and is no longer supported."
+        }
+      ]
+    },
+    {
+      "id": "runtime-ending-soon",
+      "severity": "warning",
+      "subject": "Node.js 20",
+      "file": ".nvmrc",
+      "where": ".nvmrc",
+      "declared": "20",
+      "message": ".nvmrc \"20\" names Node.js 20, which is still supported but whose support ends in 60 days. That is within the 180 days of --soon-days.",
+      "fix": "Plan the move to a release that will still be supported after this one ends.",
+      "details": {
+        "runtime": "node",
+        "key": "20",
+        "lowest": "20",
+        "range": false,
+        "kind": "end",
+        "precision": "day",
+        "end": null,
+        "daysLeft": 60,
+        "daysPast": null,
+        "source": "https://github.com/nodejs/Release"
+      },
+      "manual": [
+        {
+          "page": "Node.js, previous releases",
+          "section": "Node.js Releases",
+          "url": "https://nodejs.org/en/about/previous-releases",
+          "quote": "Production applications should only use Active LTS or Maintenance LTS releases."
+        }
+      ]
+    },
+    {
+      "id": "runtime-vendor-minimum",
+      "severity": "info",
+      "subject": "Java 11",
+      "file": "export/pom.xml",
+      "where": "maven.compiler.release",
+      "declared": "11",
+      "message": "export/pom.xml maven.compiler.release \"11\" names Java 11, an LTS release that Eclipse Temurin builds until at least the month on the saved page; the page states no end.",
+      "fix": "Nothing to fix now.",
+      "details": {
+        "runtime": "java",
+        "key": "11",
+        "lowest": "11",
+        "range": false,
+        "kind": "minimum",
+        "precision": "month",
+        "end": null,
+        "daysLeft": null,
+        "daysPast": null,
+        "source": "https://adoptium.net/support/"
+      },
+      "manual": [
+        {
+          "page": "Eclipse Temurin support, release roadmap",
+          "section": "Release Roadmap",
+          "url": "https://adoptium.net/support/",
+          "quote": "We will support LTS releases for at least four years."
+        },
+        {
+          "page": "Eclipse Temurin support, release roadmap",
+          "section": "Release Roadmap, footnote 1",
+          "url": "https://adoptium.net/support/",
+          "quote": "As a general philosophy, Adoptium will continue to build binaries for LTS releases as long as the corresponding upstream source is actively maintained."
+        }
+      ]
+    },
+    {
+      "id": "version-unreadable",
+      "severity": "info",
+      "subject": "ledger/Ledger.csproj",
+      "file": "ledger/Ledger.csproj",
+      "where": "TargetFramework",
+      "declared": "netstandard2.0",
+      "message": "ledger/Ledger.csproj TargetFramework \"netstandard2.0\": the version could not be read: \"netstandard2.0\" is a .NET Standard version, which names no runtime and has no support date of its own on the saved pages.",
+      "fix": "Write the version in a form the tool reads (docs/inputs.md lists them), or check it by hand.",
+      "details": {
+        "runtime": "dotnet",
+        "reason": "\"netstandard2.0\" is a .NET Standard version, which names no runtime and has no support date of its own on the saved pages"
+      },
+      "manual": []
+    }
+  ],
+  "notes": [],
+  "counts": {
+    "error": 4,
+    "warning": 1,
+    "info": 2
+  },
+  "gate": {
+    "failOn": "warning",
+    "pass": false,
+    "reason": "4 errors and 1 warning"
+  }
+}

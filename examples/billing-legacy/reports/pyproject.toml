@@ -1,0 +1,6 @@
+[project]
+name = "billing-reports"
+version = "1.3.0"
+description = "Month-end reports for the made-up billing system."
+requires-python = ">=3.8"
+dependencies = []

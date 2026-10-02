@@ -1,0 +1,48 @@
+eol-runtime-check: billing-legacy
+read: 6 files of interest in 5 folders, 7 declarations
+report date: 2026-03-01
+findings: 4 error, 1 warning, 2 info
+
+ERROR    runtime-past-support  .NET 6
+         ledger/Ledger.csproj TargetFramework "net6.0" names .NET 6, which is past its end of support: it ended 474 days ago (on 2024-11-12).
+         fix: Move to a release that is still supported and change this file to name it; then run the check again.
+         source (.NET and .NET Core official support policy, What releases qualify for servicing): "LTS releases get free support and patches for three years. STS releases get free support and patches for two years."
+           https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core
+
+ERROR    runtime-past-support  Node.js 18
+         package.json engines.node ">=18" allows Node.js 18 as its lowest version, which is past its end of support: it ended 305 days ago (on 2025-04-30).
+         fix: Raise the lower limit to a release that is still supported and move the code to it; then run the check again.
+         source (Node.js, previous releases, Node.js Releases): "Production applications should only use Active LTS or Maintenance LTS releases."
+           https://nodejs.org/en/about/previous-releases
+
+ERROR    runtime-past-support  Python 3.8
+         reports/pyproject.toml requires-python ">=3.8" allows Python 3.8 as its lowest version, which is past its end of support: it ended 510 days ago (on 2024-10-07).
+         fix: Raise the lower limit to a release that is still supported and move the code to it; then run the check again.
+         source (Python Developer's Guide, status of Python versions, Status key, end-of-life): "Five years after a release, support ends."
+           https://devguide.python.org/versions/
+
+ERROR    runtime-past-support  PHP 7.4
+         web/Dockerfile FROM line 6 "php:7.4-apache" names PHP 7.4, which is past its end of support: it ended 1,189 days ago (on 2022-11-28).
+         fix: Move to a release that is still supported and change this file to name it; then run the check again.
+         source (PHP, supported versions, Supported Versions): "Once the four years of support are completed, the branch reaches its end of life and is no longer supported."
+           https://www.php.net/supported-versions.php
+
+WARNING  runtime-ending-soon  Node.js 20
+         .nvmrc "20" names Node.js 20, which is still supported but whose support ends in 60 days (on 2026-04-30). That is within the 180 days of --soon-days.
+         fix: Plan the move to a release that will still be supported after this one ends.
+         source (Node.js, previous releases, Node.js Releases): "Production applications should only use Active LTS or Maintenance LTS releases."
+           https://nodejs.org/en/about/previous-releases
+
+INFO     runtime-vendor-minimum  Java 11
+         export/pom.xml maven.compiler.release "11" names Java 11, an LTS release that Eclipse Temurin builds until at least 2027-10; the page states no end.
+         fix: Nothing to fix now.
+         source (Eclipse Temurin support, release roadmap, Release Roadmap): "We will support LTS releases for at least four years."
+           https://adoptium.net/support/
+         source (Eclipse Temurin support, release roadmap, Release Roadmap, footnote 1): "As a general philosophy, Adoptium will continue to build binaries for LTS releases as long as the corresponding upstream source is actively maintained."
+           https://adoptium.net/support/
+
+INFO     version-unreadable  ledger/Ledger.csproj
+         ledger/Ledger.csproj TargetFramework "netstandard2.0": the version could not be read: "netstandard2.0" is a .NET Standard version, which names no runtime and has no support date of its own on the saved pages.
+         fix: Write the version in a form the tool reads (docs/inputs.md lists them), or check it by hand.
+
+GATE: FAIL - 4 errors and 1 warning

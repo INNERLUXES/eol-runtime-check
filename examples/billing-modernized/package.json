@@ -1,0 +1,9 @@
+{
+  "name": "billing-legacy",
+  "version": "5.0.0",
+  "private": true,
+  "description": "The same made-up invoicing back end, moved to releases that are supported.",
+  "engines": {
+    "node": ">=24"
+  }
+}

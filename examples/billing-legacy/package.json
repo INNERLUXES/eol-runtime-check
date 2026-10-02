@@ -1,0 +1,9 @@
+{
+  "name": "billing-legacy",
+  "version": "4.2.0",
+  "private": true,
+  "description": "Made-up invoicing back end, kept as it was on purpose.",
+  "engines": {
+    "node": ">=18"
+  }
+}
