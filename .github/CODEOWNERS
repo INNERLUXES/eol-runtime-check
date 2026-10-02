@@ -1,0 +1,11 @@
+# Every change is reviewed by a maintainer.
+* @innerluxesdev
+
+# The dates come from the official lifecycle pages, and the readers, the version ranges, the date arithmetic and the checks decide every line of the report; changes need extra care.
+/src/lifecycle.js @innerluxesdev
+/research/ @innerluxesdev
+/src/version.js @innerluxesdev
+/src/dates.js @innerluxesdev
+/src/readers.js @innerluxesdev
+/src/scan.js @innerluxesdev
+/src/check.js @innerluxesdev
